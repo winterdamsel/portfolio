@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paulina Duran Miranda</title> 
+  
+  
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+    <style type="text/css">
+		:root #bottom-partner-banners,
+		:root #header + #content > #left > #rlblock_left,
+		:root #content > #right > .dose > .dosesingle,
+		:root #content > #center > .dose > .dosesingle
+		{display:none !important;}</style>
+	
+	<script src="pmdm.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+  
+
+   
+<!-- Latest compiled and minified CSS -->
+<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+   -->
+
+<body>
+
+	<header>
+		<span class="toggle-button">
+			<div class="menu-bar menu-bar-top"></div>
+			<div class="menu-bar menu-bar-middle"></div>
+			<div class="menu-bar menu-bar-bottom"></div>
+		</span>
+
+
+<!-- Latest compiled and minified JavaScript
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+ Latest compiled and minified JavaScript -->
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>   
+   -->
+
+<div class="menu-wrap">
+    <div class="menu-sidebar">
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">This is me</a></li>
+            <li><a href="#">Projects</a></li>
+            <li class="menu-item-has-children"><a href="#">Click The Arrow</a>
+                <span class="sidebar-menu-arrow"></span>
+                <ul class="sub-menu">
+                    <li><a href="#">Alignment</a></li>
+                    <li><a href="#">Markup</a></li>
+                    <li><a href="#">Comments</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Shot &amp tell </a></li>
+            <li><a href="#">Get In Touch</a></li>
+        </ul>           
+    </div>
+</div> 
+</header>   
+
+<div class="banner">
+	 Paulina Durán Miranda
+<div>
+
+<!-- <div id="accessbar">
+<canvas id="canvas1" style="width:120px; height:120px; background:black; opacity:0.5; "></canvas>
+<canvas id="canvas2" style="width:120px; height:120px; background:green; opacity:0.5;"></canvas>
+<canvas id="canvas3" style="width:120px; height:120px; background:gray; opacity:0.5;" onmouseout="what()"></canvas>
+</div>
+-->
+<script>
+// define the path to plot
+
+
+var vertices=[];
+vertices.push({x:150,y:140});
+vertices.push({x:135,y:105});
+vertices.push({x:50,y:85});
+vertices.push({x:250,y:10});
+
+var vertices2=[];
+vertices2.push({x:250,y:10});
+vertices2.push({x:150,y:140});
+
+var vertices3=[];
+vertices3.push({x:250,y:10});
+vertices3.push({x:260,y:50});
+vertices3.push({x:170,y:143});
+vertices3.push({x:150,y:140});
+vertices3.push({x:70,y:85});
+vertices3.push({x:210,y:30});
+
+
+//vertices.push({x:0,y:0});
+//vertices.push({x:300,y:100});
+//vertices.push({x:80,y:200});
+//vertices.push({x:10,y:100});
+//vertices.push({x:0,y:0});
+
+// calc waypoints traveling along vertices
+function calcWaypoints(vert){
+    var waypoints=[];
+    for(var i=1;i<vert.length;i++){
+        var pt0=vert[i-1];
+        var pt1=vert[i];
+        var dx=pt1.x-pt0.x;
+        var dy=pt1.y-pt0.y;
+        for(var j=0;j<50;j++){
+            var x=pt0.x+dx*j/50;
+            var y=pt0.y+dy*j/50;
+            waypoints.push({x:x,y:y});
+        }
+    }
+    return(waypoints);
+}
+// calculate incremental points along the path
+var points=calcWaypoints(vertices);
+var points2 = calcWaypoints(vertices2);
+var points3 = calcWaypoints(vertices3);
+
+var ctx1 = document.getElementById("canvas1").getContext("2d");
+var ctx2 = document.getElementById("canvas2").getContext("2d");
+var ctx3 = document.getElementById("canvas3").getContext("2d");
+
+
+
+// variable to hold how many frames have elapsed in the animation
+// t represents each waypoint along the path and is incremented in the animation loop
+var t=1;
+var u=1;
+var v=1;
+var b = 0;
+
+
+// incrementally draw additional line segments along the path
+function animateb1(){
+	console.log("Heeerrreeee 11");
+	if(t < points.length - 1){ 	
+			requestAnimationFrame(animateb1); 
+	}
+    // draw a line segment from the last waypoint
+    // to the current waypoint
+		ctx1.beginPath();
+		var gradient=ctx1.createLinearGradient(0,0,170,0);
+		gradient.addColorStop("0","#28ABAB");
+		gradient.addColorStop("0.5","#3FC7C7");
+		gradient.addColorStop("1.0","#50F3F3");
+		
+		ctx1.lineWidth = 2;
+		ctx1.strokeStyle = gradient;
+		ctx1.moveTo(points[t-1].x,points[t-1].y);
+		ctx1.lineTo(points[t].x,points[t].y);
+		ctx1.stroke();
+    t++;
+	}
+
+function animateb2(){
+
+	if(u < points2.length - 1){ 	
+			requestAnimationFrame(animateb2); 
+	}
+	ctx2.beginPath();
+	var gradient=ctx2.createLinearGradient(0,0,170,0);
+	gradient.addColorStop("0","#28ABAB");
+	gradient.addColorStop("0.5","#3FC7C7");
+	gradient.addColorStop("1.0","#50F3F3");
+		
+	ctx2.lineWidth = 2;
+	ctx2.strokeStyle = gradient;
+	ctx2.moveTo(points2[u-1].x,points2[u-1].y);
+	ctx2.lineTo(points2[u].x,points2[u].y);
+	ctx2.stroke();
+	u++;
+}
+
+function animateb3(){
+	if(v < points3.length - 1){ 	
+			requestAnimationFrame(animateb3); 
+	}
+	ctx3.beginPath();
+	var gradient=ctx3.createLinearGradient(0,0,170,0);
+	gradient.addColorStop("0","#28ABAB");
+	gradient.addColorStop("0.5","#3FC7C7");
+	gradient.addColorStop("1.0","#50F3F3");
+		
+	ctx3.lineWidth = 2;
+	ctx3.strokeStyle = gradient;
+	ctx3.moveTo(points3[v-1].x,points3[v-1].y);
+	ctx3.lineTo(points3[v].x,points3[v].y);
+	ctx3.stroke();
+	v++;
+}
+// start the animation
+animateb1();
+
+animateb2();
+animateb3();
+
+
+ 
+function what(){
+console.log("WTF???!!!!!");
+}
+ 
+</script>
+
+
+
+</body>
+</html>
