@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Paulina Duran Miranda</title> 
+  
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+   <script src="scripts/plugins.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="scripts/jquery.subwayMap-0.5.0.js"></script>
+		<script src="scripts/tabtab.js"></script>
+	<script src="scripts/tabtab.min.js"></script>
+	<!--<script src="scripts/unslider-master/src/js/unslider.js"></script>-->
+
+<!--	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	-->				
+	<script src="pmdm.js"></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body style="background:#FFFFFF;">
+<div class="subway-map" data-columns="12" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="false" data-grid="false" data-lineWidth="8" >
+<ul data-color="#ff4db2" data-label="" >
+<li data-coords="6,7" >Mexico City</li>
+<li data-coords="5,6" data-dir="W" data-marker="interchange">Monterrey</li>
+<li data-coords="4,5" data-dir="N"></li>
+<li data-coords="3,5" data-dir="W"></li>
+<li data-coords="2,5">San Diego</li>
+<li data-coords="3,4" data-dir="N"></li>
+<li data-coords="8,4" ></li>
+<li data-coords="9,3" data-dir="E"></li>
+<li data-coords="10,2" ></li>
+<li data-coords="11,2" data-dir="W" data-marker="interchange">Tampere</li>
+</ul>
+<ul data-color="#A1EDD2" data-label="" data-shiftCoords="0,-0.5" >
+<li data-coords="5,6"></li>
+<li data-coords="9,6"></li>
+<li data-coords="10,5" data-dir="E"></li>
+<li data-coords="10,3" data-dir="N"></li>
+<li data-coords="11,2" data-dir="N"></li>
+<li data-coords="11,1" data-dir="N"></li>
+<li data-coords="10,0" data-dir="N"></li>
+<li data-coords="5,0"></li>
+<li data-coords="4,1" data-dir="W"></li>
+<li data-coords="3,2" data-dir="S"></li>
+<li data-coords="2,3" data-dir="W">San Francisco</li>
+<li data-coords="8,3">New York</li>
+</ul>
+</div>
+</body>
+<script>
+	 $(".subway-map").subwayMap({ debug: true });
+</script>
+</html>

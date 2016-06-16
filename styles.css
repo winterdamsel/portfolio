@@ -1,0 +1,138 @@
+a {
+	text-decoration: none;
+}
+ul {
+	padding-left: 0;
+}
+li {
+	list-style: none;
+}
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Montserrat', Arial, serif;
+	background-image: url('media/violetwinter.jpg');
+}
+::selection {
+	background-color: #EBEBF2;
+	color: #83828D;
+}
+
+.box-img{
+	width:298px;
+	height:315px;
+	padding: 10px;
+}
+
+#accesbar{
+display: inline;
+}
+
+
+/*
+Body
+*/
+
+.banner {	
+	width: 100%;
+	height: 100%;
+	z-index:1;
+	padding-left: 55px;
+	padding-top: 100px;
+	margin: 0px auto;
+	background-size: 100%;
+	overflow: hidden;
+	font-size: 50px;
+	color: white;
+	font-family: font-family: 'Montserrat', Arial, serif;
+}
+
+
+
+.subtitle {
+	font-size: 20px;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
+
+.authors{
+	font-size: 14px;
+	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+	 line-height: 100%;
+}
+
+
+/*******************/
+/* Tabs            */
+/******************/
+
+.tabdemo ul {
+  margin: 0;
+  padding: 0
+}
+
+.tabdemo .tab-content-item { max-width: 100%; }
+
+.my-tabs { margin: 0 auto }
+
+.my-tabs .tab-content-item {
+  padding: 50px;
+  background: #f9f9f9;
+ /* -webkit-columns: 2;
+  -moz-columns: 2;*/
+  columns: 1;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/*.content {
+  background: #f9f9f9;
+  font-size: 20px;
+  line-height: 32px;
+}
+*/
+.my-tabs .tab-menu {
+  margin-bottom: 20px;
+  display: table;
+  width: 100%
+}
+
+.my-tabs li {
+  cursor: pointer;
+  padding: 0 12px;
+  display: table-cell;
+  text-align: center
+}
+
+.my-tabs li:first-of-type { padding-left: 0 }
+
+.my-tabs li:last-of-type { padding-right: 0 }
+
+.my-tabs li a {
+  background-color: #f9f9f9;
+  border-radius: 1px;
+  padding: 20px 40px;
+  display: block
+}
+
+.my-tabs li.active a {
+  background-color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 8px 2px rgba(234,57,181,.33)
+}
+
+.my-tabs li.hover a {
+	background-color: #A1BFED;
+}
+
+.my-tabs li a { text-decoration: none }
+
+.description {
+  font-size: 0.75em;
+}
+
+.panel-title{
+  font-size: 1em;
+}
+
+

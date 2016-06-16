@@ -1,0 +1,184 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 400 3em/1.28 Montserrat;
+  color: rgb(251, 251, 251);
+}
+
+.container {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 62px;
+  background-color: rgb(222, 222, 222);
+}
+
+.h1 {
+  position: relative;
+  float: left;
+  min-height: 110px;
+  margin-left: 9%;
+  word-spacing: 1px;
+  color: rgb(251, 251, 251);
+}
+
+.mainbanner {
+  float: left;
+  width: 100%;
+  height: 272px;
+  background: url('../images/violetwinter.jpg') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+._button {
+  display: block;
+  float: left;
+  width: 12%;
+  height: 61px;
+  border-radius: 3px;
+  font-size: 0.333em;
+  line-height: 1.38;
+  text-align: center;
+}
+
+._button:hover {
+  text-decoration: underline;
+}
+
+.h1-1 {
+  z-index: 0;
+  width: 32.4166666666%;
+  margin-top: 9px;
+  font-family: Roboto;
+  font-size: 1.438em;
+  font-weight: 100;
+  letter-spacing: 13px;
+}
+
+.h1-2 {
+  clear: both;
+  z-index: 1;
+  width: 32.25%;
+  margin-top: -36px;
+  font-size: 1em;
+  letter-spacing: 5px;
+}
+
+.container ._button-1 {
+  margin-left: 30.41667%;
+  background-color: #dedede;
+  color: #4d4d4d;
+}
+
+.container ._button-2 {
+  margin-left: 8.41667%;
+  background-color: rgb(222, 222, 222);
+  color: #4d4d4d;
+}
+
+.container ._button-3 {
+  margin-left: 8.33073%;
+  background-color: #29a3a3;
+  color: #dedede;
+}
+
+@media(max-width: 980px) {
+  .container,
+  .mainbanner {
+    margin-left: -10.50861%;
+  }
+
+  .mainbanner .h1 {
+    position: relative;
+    margin-left: 8.99713%;
+  }
+
+  .mainbanner .h1-1 {
+    z-index: 0;
+  }
+
+  .mainbanner .h1-2 {
+    z-index: 1;
+  }
+
+  .container ._button-1 {
+    margin-left: 30.41614%;
+  }
+
+  .container ._button-2 {
+    margin-left: 8.41518%;
+  }
+
+  .container ._button-3 {
+    margin-left: 8.3306799999%;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    font-size: 3em;
+  }
+
+  .container,
+  .mainbanner {
+    margin-left: -13.41146%;
+  }
+
+  .mainbanner .h1 {
+    position: relative;
+    margin-left: 8.99862%;
+  }
+
+  .mainbanner .h1-1 {
+    z-index: 0;
+  }
+
+  .mainbanner .h1-2 {
+    z-index: 1;
+  }
+
+  .container ._button-1 {
+    margin-left: 30.41382%;
+  }
+
+  .container ._button-2 {
+    margin-left: 8.41268%;
+  }
+
+  .container ._button-3 {
+    margin-left: 8.3313%;
+  }
+}
+
+@media(max-width: 480px) {
+  .container,
+  .mainbanner {
+    margin-left: -21.45508%;
+  }
+
+  .mainbanner .h1 {
+    position: relative;
+    margin-left: 8.9974%;
+  }
+
+  .mainbanner .h1-1 {
+    z-index: 0;
+  }
+
+  .mainbanner .h1-2 {
+    z-index: 1;
+  }
+
+  .container ._button-1 {
+    margin-left: 30.41667%;
+  }
+
+  .container ._button-2 {
+    margin-left: 8.41146%;
+  }
+
+  .container ._button-3 {
+    margin-left: 8.33008%;
+  }
+}

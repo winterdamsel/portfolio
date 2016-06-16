@@ -11,96 +11,249 @@
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/velocity/1.2.2/velocity.min.js"></script>
+   <script src="scripts/plugins.js"></script>
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <style type="text/css">
-		:root #bottom-partner-banners,
-		:root #header + #content > #left > #rlblock_left,
-		:root #content > #right > .dose > .dosesingle,
-		:root #content > #center > .dose > .dosesingle
-		{display:none !important;}</style>
-	
+<script src="scripts/jquery.subwayMap-0.5.0.js"></script>
+		<script src="scripts/tabtab.js"></script>
+	<script src="scripts/tabtab.min.js"></script>
+		<link rel="stylesheet" href="scripts/unslider-master/dist/css/unslider.css">
+	<script src="scripts/unslider-master/dist/js/unslider-min.js"></script>
+<script src="scripts/imageMapResizer.min.js"></script>
+	<!--<script src="scripts/unslider-master/src/js/unslider.js"></script>-->
+
+<!--	<link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+
+	<script type="text/javascript" src="http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	-->				
 	<script src="pmdm.js"></script>
 	<link rel="stylesheet" href="styles.css">
 </head>
   
-
-   
-<!-- Latest compiled and minified CSS -->
-<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-   -->
-
 <body>
 
 	<header>
-		<span class="toggle-button">
-			<div class="menu-bar menu-bar-top"></div>
-			<div class="menu-bar menu-bar-middle"></div>
-			<div class="menu-bar menu-bar-bottom"></div>
-		</span>
 
-
-<!-- Latest compiled and minified JavaScript
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
- Latest compiled and minified JavaScript -->
-
- 
-
-
-<div class="menu-wrap">
-    <div class="menu-sidebar">
-        <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">This is me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li class="menu-item-has-children"><a href="#">Click The Arrow</a>
-                <span class="sidebar-menu-arrow"></span>
-                <ul class="sub-menu">
-                    <li><a href="#">Alignment</a></li>
-                    <li><a href="#">Markup</a></li>
-                    <li><a href="#">Comments</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Shot &amp tell </a></li>
-            <li><a href="#">Get In Touch</a></li>
-        </ul>           
-    </div>
-</div> 
    <div class="banner" id="mainban">
 	 Paulina Durán Miranda
 	 <br>
-<div>
+	 </div>
 </header>   
 
 
-<div style="background-color: #33CCCC; height: 10%; color: white; margin: 50px; padding: 20px; text-align: right;">
+<div style="background-color: #33CCCC; height: 10%; color: white; margin: 50px 50px 10px 50px; padding: 20px; text-align: right;">
 <span>A knowledge wanderer connecting lives through technology</span>
 </div>
 
-<div class="container">
-<div class="row">
-	<div class="col-md-7" id="second" style="background-color: #FFFFFF; color: white; text-align: center;"> 
-	<img src="media/twoworlds.png" style="width:100%; height: 100%;">
+<div class="tabdemo my-tabs" style="margin: 20px 50px 10px 50px;">
+
+  <ul class="tab-menu menu">
+	<li><a href="#">Hello!</a></li>
+    <li><a href="#">Expertise</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Research</a></li>
+  </ul>
+  
+  <div class="tabdemo__content content">
+  <div class="tab-content content" style="width:100%; padding: 15px; margin: -15px; height:100%;">
+    
+	<div class="tab-content-item" style="width:100%;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4" id="mytweets" style="background-color: #FFFFFF; height:100%;">
+				
+			</div>
+		</div>
+	</div>
+	</div>
+	
+	<div class="tab-content-item" style="width:100%;">
+     <h2>Expertise</h2>
+
+	<div class="container">	
+		<div class="row" style="background-color:#BA9EDE;padding-top:2%;">
+			<div class="col-md-4 row-eq-height" >
+				<img src="media/lines.png" usemap="#Map" style="width: 466px; max-width: 100%; height: auto;vertical-align:middle; margin-right:auto;margin-bottom:2%;" id="map" alt="">
+				<map name="Map" id="Map">
+					<area alt="NY" title="" href="#" shape="rect" coords="284,122,306,149" onclick="setPicture(0); return false"/>
+					<area alt="SF" title="" href="#" shape="rect" coords="46,126,69,148" onclick="setPicture(1); return false"/>
+					<area alt="Tampere" title="#" href="" shape="rect" coords="403,82,433,111" onclick="setPicture(2); return false"/>
+					<area alt="San Diego" title="#" href="" shape="rect" coords="47,202,66,227" onclick="setPicture(3); return false"/>
+					<area alt="Monterrey" title="" href="#" shape="rect" coords="164,243,187,269" onclick="setPicture(4); return false"/>
+					<area alt="Mexico" title="" href="#" shape="rect" coords="204,284,228,305" onclick="setPicture(5); return false"/>
+				</map>
+				<p style="background-color:white;width:100%;text-align:center;">Journeys</p>
+			</div>
+			<div class="col-md-4 row-eq-height " style="max-height:inherit;height:inherit;">
+				<div class="carrousel" id="carr" style="width:100%;height:35%;">
+					<ul>
+					<li><img src="media/ny_ted.jpg" alt="NYTED" style="width:100%;height:35%;border: 5px solid #BA9EDE;"><br><div style="background-color:white;" class="description">Some text here</div></li>
+					<li><img src="media/sf_open.jpg" alt="SFFacebook" style="width:100%;height:35%;border: 5px solid #BA9EDE;"><br><div style="background-color:white;" class="description">Some text here</div></li>
+					<li><img src="media/tmp_angry.jpg" alt="AngryBirds" style="width:100%;height:35%;border: 5px solid #BA9EDE;"><div style="background-color:white;" class="description">Some text here</div></li>
+					<li><img src="media/sd_jolla.jpg" alt="LaJollaCoves" style="width:100%;height:35%;border: 5px solid #BA9EDE;"><div style="background-color:white;" class="description">Some text here</div></li>
+					<li><img src="media/mty_cerro.jpg" alt="MTY Cerro de la Silla" style="width:100%;height:35%;border: 5px solid #BA9EDE;"><div style="background-color:white;" class="description">Some text here</div></li>
+					<li><img src="media/mx_bart.jpg" alt="MX Palacio de Bellas Artes" style="width:100%;height:35%;border: 5px solid #BA9EDE;"><div style="background-color:white;" class="description">Some text here</div></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="col-md-4 row-eq-height">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading" style="background-color:#EA39B5;width:100%;color:white;">
+							<h4 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapse1">▼ Experience</a>
+							</h4>
+						</div>
+						<div id="collapse1" class="panel-collapse collapse">
+							<div class="panel-body">
+							<table style="border-spacing:15px;border-collapse:separate;width:100%;">
+								<tr>
+									<td style="padding-left:10px;">Last Stop:</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; Tampere<br>
+									<span class="description">  Software Development Engineer in Test – Summer trainee</span>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;">Previous stops:</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; San Diego<br>
+									<span class="description animated infinite bounce">  Software Test Engineer (Qualcomm - MDM)</span>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; Monterrey<br>
+									<span class="description">  Sr. Test Engineer (Texas Instruments - OMAP)</span><br>
+									<span class="description">  Software Engineer (Texas Instruments - OMAP)</span><br>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; Mexico City<br>
+									<span class="description animated infinite bounce">  Mobile Applications Developer</span></td>
+								</tr>
+							</table>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-heading" style="background-color:#A1EDD2;width:100%;color:white;">
+							<h4 class="panel-title"><a data-toggle="collapse" data-parent="#accordion" href="#collapse2">▼ Education</a></h4>
+						</div>
+						<div id="collapse2" class="panel-collapse collapse">
+							<div class="panel-body">
+							<table style="border-spacing:15px;border-collapse:separate;width:100%;font-size:1em;">
+								<tr>
+									<td style="padding-left:10px;">Last stop:</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; Tampere<br>
+									<span class="description">MSc. in Information Technology<br>Focus in User Experience<br>Tampere University of Technology</span>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;">Previous stops:</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; New York<br>									
+									<span class="description">NYC Disrupt Design Fellowship<br>Un-school of Disruptive Design</span>
+									</td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; San Francisco<br>
+									<span class="description">Open Source Project: Design Open<br>Open Academy, sponsored by Facebook</span></td>
+								</tr>
+								<tr>
+									<td style="padding-left:10px;font-size:0.9em;">&#9711; Monterrey<br>
+									<span class="description">BSc. in Electronics &amp; Communications Engineering<br>ITESM Campus Monterrey<br>Honors Degree &amp; Student Leadership Diploma</span>
+									</td>
+								</tr>
+							</table>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	<div class="tab-content-item" style="width:100%;">
+	<h2>Projects</h2>
+	
 	
 	</div>
-<div class="col-md-1"></div>
-	<div class="col-md-4" id="mytweets" style="background-color: #FFFFFF; height:100%;">
-		<a class="twitter-timeline" href="https://twitter.com/winterdamsel" data-widget-id="724557401802850304">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-		
+	
+	<div class="tab-content-item" style="width:100%;">
+	
+	<h2>Papers</h2>
+	<table style="border-spacing:15px;border-collapse:separate; width:100%;">			
+		<tr>
+		<td style="width:10%;"><img src="media/icons/Shape-Star2-48.png" alt="staricon"><br><br></td>
+		<td style="font-size:20px;width:90%;"><a href="https://www.researchgate.net/publication/302461114_Burning_up_the_points_An_experimental_research_on_gamification_in_an_Agile_working_environment">Burning up the points: An experimental research on gamification in an Agile working environment</a><br><span class="authors">by Paulina Durán &amp; Samu Lappalainen</span><br><br>	
+		</td>
+		</tr>
+		<tr>
+		<td style="width:10%"><img src="media/icons/conversational-48.png" alt="agent icon"><br><br></td>
+		<td style="font-size:20px;width:90%"><a href="https://www.researchgate.net/publication/303912373_Crowdsourcing_Project_Evaluation_of_Conversational_Agents">Crowdsourcing Project: Evaluation of Conversational Agents</a><br><span class="authors">by Stephanie Arévalo &amp; Paulina Durán</span><br><br></td>
+		</tr>
+		<tr>
+		<td style="width:10%"><img src="media/icons/Mobile-Phone-Music-48.png" alt="phone icon"></td>
+		<td style="font-size:20px;width:90%"><a href="https://www.researchgate.net/publication/303566435_Shumei_a_musical_way_to_change_your_mood_Internet_of_Things_Media_Services_application">Shumei, a musical way to change your mood: Internet of Things &amp; Media Services application</a><br><span class="authors">by Stephanie Arévalo, Paulina Durán &amp; Peng Yao</span></td>
+		</tr>
+	</table>
+	<br>
+	<br>
+	
+	
+	<h2>Visualizations</h2>
+	
+	<div class="container" style="margin-top:5%;">	
+		<div class="table-responsive">
+			<table class="table">			
+				<tr style="border-spacing:5px;border-collapse:separate;width:100%;">
+				<td style="background-color:#A1BFED;"><a href="https://magic.piktochart.com/output/4975509-designopen-interviews" target="_blank"><img src="media/infographics/oss1st.png" alt="Design Open Research: Stage 1" class="box-img"></a></td>
+				<td style="background-color:#A1BFED;"><a href="https://magic.piktochart.com/output/5971545-finalcharts" target="_blank"><img src="media/infographics/ossux.png" alt="Design Open. Final Results" class="box-img"></a></td>
+				<td style="background-color:#A1BFED;"><a href="https://magic.piktochart.com/output/8931055-ecommerce2015" target="_blank"><img src="media/infographics/ecommerce.png" alt="ECommerce article" class="box-img"></a></td>
+				<td style="background-color:#A1BFED;"><a href="http://prezi.com/uwcazthbhpxj/?utm_campaign=share&utm_medium=copy" target="_blank"><img src="media/infographics/gamification.png" alt="Gamification presentation" class="box-img"></a></td>
+				</tr>
+				<tr style="border-spacing:5px;border-collapse:separate;width:100%;">
+				<td >Designers, Developers & Open Source: Research stage.<br><span class="authors">This infographic intended to show how the screening process for topics of interest was performed prior to the study.</span></td>
+				<td >
+				Designers, Developers & Open Source<br>
+				<span class="authors">Infographic for the Open Academy's project. Open Academy was a Facebook initiative to promote the participation of students in Open Source Projects. Open Design Foundation (formerly known as Design Open) is a project that intends to bring designers as collaborators for open source projects.</span></td>
+				<td >E-Commerce &amp; Social Media<br><span class="authors">Infographic for the research paper "How Large U.S. Companies Can Use Twitter and Other Social Media to Gain Business Value" by Culnan et al. (2010)</span></td>
+				<td >Gamification &amp; Motivation<br><span class="authors">Visual summary for the paper "Studying gamification: The effect of Rewards and Incentives on Motivation" by Richter, G., Raban, D.R., & Rafaeli, S.</span></td>
+				</tr>
+			</table>
+		</div>
 	</div>
+    </div>
+	
+	</div>
+
 </div>
+
+<footer  style="background-color: #33CCCC; height: 10%; color: white; margin.
+-left:auto; margin-right:auto; margin-top: 10px; padding: 20px; text-align: center; font-size:20px; width:100%; position:static;">
+	<div>Let's get in touch!</div>
+	<ul style=" display: table; width:100%;overflow-x:auto;">
+		<li><a href="mailto:paudm@yahoo.com" style="background-color: #33CCCC;">
+			<img src="media/email-2-46px.png" style="-webkit-filter:invert(100%);" alt="mail:paudm@yahoo.com"></a></li>
+		<li><a href="https://www.linkedin.com/in/paulinaduran?trk=hp-identity-name" style="background-color: #33CCCC;"><img src="media/linkedin-46px.png" style="-webkit-filter:invert(100%);" alt="LinkedIn:paulinaduran"></a></li>
+		<li><a href="https://twitter.com/winterdamsel" style="background-color: #33CCCC;"><img src="media/twitter-46px.png" style="-webkit-filter:invert(100%);" alt="Twitter:winterdamsel"></a></li>
+		<li><a href="https://www.instagram.com/winterdamsel/" style="background-color: #33CCCC;"><img src="media/instagram-46px.png" style="-webkit-filter:invert(100%);" alt="Instagram:winterdamsel"></a></li>
+	</ul>
+
+</footer>
 </div>
-
-<script>
-// define the path to plot
-
-</script>
-
-
-<footer>
-  <p>Let's get in touch!</p>
-  <div class="row" id="socialmedia" style="background-color: #33CCCC; height: 10%; color: white; margin: 50px; padding: 20px;">
+<!--<footer>
+   <div class="row" id="socnom" style="background-color: #33CCCC; height: 3%; color: white; margin: 10px 0px 0px 0px; padding: 10px;text-align:center;"><span style="text-align:center;font-size: 20px;">Let's get in touch!<span></div>
+  
+  <div class="row" id="socialmedia" style="background-color: #33CCCC; height: 7%; color: white; padding: 15px; margin: 0px 0px 0px 0px;">
 	<div class="col-md-2"></div>
 	<div class="col-md-2">
 	<a href="mailto:paudm@yahoo.com">
@@ -110,8 +263,45 @@
 	<div class="col-md-2"><a href="https://www.instagram.com/winterdamsel/"><img src="media/instagram-46px.png" style="-webkit-filter:invert(100%);"></a></div>
   <div class="col-md-2"></div>
 </footer>
+-->
+<script>
+console.log("Here");
+
+$(window).load(function() {
+$(".my-tabs").tabtab({
+        animateHeight: !0,
+        fixedHeight: 0,
+        scale: 1,
+        rotateX: 10,
+        speed: 1500,
+		startSlide: 1, 
+        transformOrigin: "center left",
+        rotateY: 0,
+        easing: "easeInSine",
+        translateX: 1000,
+        tabMenu: ".tab-menu",
+        tabContent: ".tab-content"
+    })
+});
+
+$(function() { $('.carrousel').unslider({
+	arrows: false, 
+	nav: false, 
+	animateHeight: true,
+	animation: 'horizontal'
+	}) 
+});
+
+function setPicture(pichoo){
+console.log("Clicked on "+pichoo);
+
+$('.carrousel').unslider('animate:' + pichoo);
+}
+
+</script>
 
 </body>
+
 
 
 </html>

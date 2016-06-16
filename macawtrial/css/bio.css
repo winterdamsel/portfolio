@@ -1,0 +1,280 @@
+body {
+  background-color: rgb(255, 255, 255);
+  font: 100 1em/1.38 Roboto;
+  color: rgb(0, 0, 0);
+}
+
+.container {
+  float: left;
+  clear: both;
+  width: 100%;
+  height: 62px;
+  background-color: rgb(222, 222, 222);
+}
+
+.h1 {
+  position: relative;
+  float: left;
+  min-height: 110px;
+  margin-left: 9%;
+  line-height: 1.28;
+  word-spacing: 1px;
+  color: rgb(251, 251, 251);
+}
+
+.image {
+  display: block;
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 7;
+  width: 226px;
+  height: auto;
+  margin-left: 10%;
+  overflow: hidden;
+}
+
+.mainbanner {
+  float: left;
+  width: 100%;
+  height: 272px;
+  background: url('../images/violetwinter.jpg') rgb(222, 222, 222);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.phrase {
+  float: left;
+  clear: both;
+  width: 34%;
+  min-height: 101px;
+  margin: 11px 0 0 56%;
+  font-family: Montserrat;
+  font-size: 1.25em;
+  font-weight: 400;
+  text-align: center;
+  color: #29a3a3;
+}
+
+.text {
+  position: relative;
+  float: left;
+  z-index: 8;
+  width: 39.2%;
+  min-height: 226px;
+  margin-left: 1.5666666666%;
+  font-size: 1em;
+  color: rgb(0, 0, 0);
+}
+
+.text p {
+  margin-bottom: 1em;
+}
+
+._button {
+  display: block;
+  float: left;
+  width: 12%;
+  height: 61px;
+  border-radius: 3px;
+  font-family: Montserrat;
+  font-size: 1em;
+  font-weight: 400;
+  text-align: center;
+}
+
+._button:hover {
+  text-decoration: underline;
+}
+
+.h1-1 {
+  z-index: 0;
+  width: 32.4166666666%;
+  margin-top: 9px;
+  font-size: 4.313em;
+  letter-spacing: 13px;
+}
+
+.h1-2 {
+  clear: both;
+  z-index: 1;
+  width: 32.25%;
+  margin-top: -36px;
+  font-family: Montserrat;
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.container ._button-1 {
+  margin-left: 30.41667%;
+  background-color: #29a3a3;
+  color: #ffffff;
+}
+
+.container ._button-2 {
+  margin-left: 8.41667%;
+  background-color: rgb(222, 222, 222);
+  color: #4d4d4d;
+}
+
+.container ._button-3 {
+  margin-left: 8.33073%;
+  background-color: rgb(222, 222, 222);
+  color: #4d4d4d;
+}
+
+@media(max-width: 980px) {
+  .container {
+    margin-left: 6.7331%;
+  }
+
+  .image {
+    position: relative;
+    z-index: 7;
+    height: auto;
+    margin-top: -7px;
+    margin-left: 12.2449%;
+  }
+
+  .mainbanner .h1 {
+    position: relative;
+    margin-left: 8.99713%;
+  }
+
+  .phrase {
+    position: relative;
+    z-index: 9;
+    margin-left: 68.57143%;
+  }
+
+  .text {
+    position: relative;
+    z-index: 8;
+  }
+
+  .mainbanner .h1-1 {
+    z-index: 0;
+  }
+
+  .mainbanner .h1-2 {
+    z-index: 1;
+  }
+
+  .container ._button-1 {
+    margin-left: 30.41614%;
+  }
+
+  .container ._button-2 {
+    margin-left: 8.41518%;
+  }
+
+  .container ._button-3 {
+    margin-left: 8.3306799999%;
+  }
+}
+
+@media(max-width: 768px) {
+  body {
+    font-size: 1em;
+  }
+
+  .container {
+    margin-left: 8.59375%;
+  }
+
+  .image {
+    position: relative;
+    z-index: 7;
+    height: auto;
+    margin-top: -34px;
+    margin-left: 15.625%;
+  }
+
+  .mainbanner .h1 {
+    position: relative;
+    margin-left: 8.99862%;
+  }
+
+  .phrase {
+    position: relative;
+    z-index: 9;
+    margin-left: 87.5%;
+  }
+
+  .text {
+    position: relative;
+    z-index: 8;
+  }
+
+  .mainbanner .h1-1 {
+    z-index: 0;
+  }
+
+  .mainbanner .h1-2 {
+    z-index: 1;
+  }
+
+  .container ._button-1 {
+    margin-left: 30.41382%;
+  }
+
+  .container ._button-2 {
+    margin-left: 8.41268%;
+  }
+
+  .container ._button-3 {
+    margin-left: 8.3313%;
+  }
+}
+
+@media(max-width: 480px) {
+  .container {
+    margin-left: 13.75%;
+  }
+
+  .image {
+    position: relative;
+    z-index: 7;
+    height: auto;
+    margin-top: -88px;
+    margin-left: 25%;
+  }
+
+  .mainbanner .h1 {
+    position: relative;
+    margin-left: 8.9974%;
+  }
+
+  .phrase {
+    position: relative;
+    z-index: 9;
+    margin-left: 140%;
+  }
+
+  .text {
+    position: relative;
+    z-index: 8;
+  }
+
+  .mainbanner .h1-1 {
+    z-index: 0;
+  }
+
+  .mainbanner .h1-2 {
+    z-index: 1;
+  }
+
+  .container ._button-1 {
+    margin-left: 30.41667%;
+  }
+
+  .container ._button-2 {
+    margin-left: 8.41146%;
+  }
+
+  .container ._button-3 {
+    margin-left: 8.33008%;
+  }
+}

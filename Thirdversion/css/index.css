@@ -1,0 +1,115 @@
+body {
+  height: 100%;
+  background: url('../images/violetwinter.jpg') rgb(255, 255, 255);
+  background-size: 1344px 760px;
+  background-position: left top;
+  background-attachment: fixed;
+  font: 400 1em/1.38 Montserrat;
+  color: rgb(0, 0, 0);
+}
+
+h2{
+padding: 5%;
+font-size: 2em;
+}
+
+.container {
+  float: left;
+  clear: both;
+  width: 80%;
+  height: 50px;
+  margin: 35px 0 0 10%;
+}
+
+.mainblock {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 7;
+  width: 79.9166666666%;
+  height:auto;
+  margin: 35px 0 0 10%;
+  background-color: rgb(222, 222, 222);
+}
+
+.papers {
+  position: relative;
+  float: left;
+  clear: both;
+  z-index: 8;
+  width: 25.6%;
+  min-height: 28px;
+  margin: -398px 0 0 10%;
+  font-size: 1.25em;
+  color: rgb(0, 0, 0);
+}
+
+.summary {
+  float: left;
+  clear: both;
+  width: 80%;
+  min-height: 51px;
+  margin: 10px 0 0 10%;
+  border: 17px solid #33cccc;
+  background-color: #33cccc;
+  font-size: 1em;
+  text-align: right;
+  color: #ffffff;
+}
+
+.title {
+  float: left;
+  width: 52.8333333333%;
+  min-height: 89px;
+  margin: 39px 0 0 10%;
+  font-size: 2.5em;
+  color: rgb(255, 255, 255);
+}
+
+._button {
+  display: block;
+  float: left;
+  width: 23.4375%;
+  height: 37px;
+  margin-top: 8px;
+  border-radius: 3px;
+  background-color: #f9f9f9;
+  font-size: 1em;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+._button:hover {
+  box-shadow: 2px 4px 5px #614b7e;
+}
+
+.container ._button-2,
+.container ._button-3 {
+  margin-left: 2.08171%;
+}
+
+.container ._button-4 {
+  margin-left: 2.01986%;
+}
+
+footer{
+
+	background-color: #33CCCC; 
+
+	color: white; 
+	padding: 20px; 
+	text-align: center; 
+	font-size:20px;
+	bottom: 0;
+	left: 0;
+	position: relative;
+	margin-top: -(footer height); /* Note the negative value */
+	width: 80%;
+    clear:both;	
+	margin-left:auto; 
+	margin-right:auto; 
+}
+
+.description {
+  font-size: 0.75em;
+}
