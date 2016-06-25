@@ -1,6 +1,7 @@
 a {
 	text-decoration: none;
 }
+
 ul {
 	padding-left: 0;
 }
@@ -8,12 +9,15 @@ li {
 	list-style: none;
 }
 * {
-	box-sizing: border-box;
+	box-sizing: content-box;
 }
 body {
 	font-family: 'Montserrat', Arial, serif;
 	background-image: url('media/violetwinter.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
 }
+
 ::selection {
 	background-color: #EBEBF2;
 	color: #83828D;
@@ -29,6 +33,32 @@ body {
 display: inline;
 }
 
+h2{
+	padding-left: 2%;
+	text-align: center;
+}
+
+h4{
+	font-size:0.6em;
+}
+
+#contain {
+   min-height:100%;
+   position:relative;
+}
+
+#footer {
+   position:absolute;
+   bottom:0;
+   width:100%;
+   height:60px;   /* Height of the footer */
+}
+
+#container{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
 
 /*
 Body
@@ -48,8 +78,6 @@ Body
 	font-family: font-family: 'Montserrat', Arial, serif;
 }
 
-
-
 .subtitle {
 	font-size: 20px;
 	font-family: 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
@@ -61,6 +89,14 @@ Body
 	 line-height: 100%;
 }
 
+.description {
+  font-size: 0.75em;
+}
+
+.panel-title{
+  font-size: 0.85em;
+}
+
 
 /*******************/
 /* Tabs            */
@@ -68,7 +104,7 @@ Body
 
 .tabdemo ul {
   margin: 0;
-  padding: 0
+  padding: 0;
 }
 
 .tabdemo .tab-content-item { max-width: 100%; }
@@ -76,11 +112,11 @@ Body
 .my-tabs { margin: 0 auto }
 
 .my-tabs .tab-content-item {
-  padding: 50px;
+  padding: 15px 15x 15px 25px;
   background: #f9f9f9;
  /* -webkit-columns: 2;
-  -moz-columns: 2;*/
-  columns: 1;
+  -moz-columns: 2;
+  columns: 1;*/
   font-size: 24px;
   line-height: 32px;
 }
@@ -94,14 +130,16 @@ Body
 .my-tabs .tab-menu {
   margin-bottom: 20px;
   display: table;
-  width: 100%
+  width: 100%;
+  
 }
+
 
 .my-tabs li {
   cursor: pointer;
   padding: 0 12px;
   display: table-cell;
-  text-align: center
+  text-align: center;
 }
 
 .my-tabs li:first-of-type { padding-left: 0 }
@@ -112,7 +150,7 @@ Body
   background-color: #f9f9f9;
   border-radius: 1px;
   padding: 20px 40px;
-  display: block
+  display: block;
 }
 
 .my-tabs li.active a {
@@ -126,13 +164,4 @@ Body
 }
 
 .my-tabs li a { text-decoration: none }
-
-.description {
-  font-size: 0.75em;
-}
-
-.panel-title{
-  font-size: 1em;
-}
-
 
