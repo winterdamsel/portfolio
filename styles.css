@@ -73,7 +73,7 @@ Body
 	margin: 0px auto;
 	background-size: 100%;
 	overflow: hidden;
-	font-size: 50px;
+	font-size: 4em;
 	color: white;
 	font-family: font-family: 'Montserrat', Arial, serif;
 }
@@ -131,20 +131,32 @@ Body
   margin-bottom: 20px;
   display: table;
   width: 100%;
-  
 }
 
+@media (min-width: 768px){
+	.my-tabs li {
+	cursor: pointer;
+	padding: 0 12px;
+	display: table-cell;
+	text-align: center;
+	}
+	
+	.my-tabs li:first-of-type 
+	{ padding-left: 0 }
+	.my-tabs li:last-of-type 
+	{ padding-right: 0 }
 
-.my-tabs li {
-  cursor: pointer;
-  padding: 0 12px;
-  display: table-cell;
-  text-align: center;
 }
 
-.my-tabs li:first-of-type { padding-left: 0 }
+@media (max-width: 767px){
+	.my-tabs li {
+	cursor: pointer;
+	padding: 0 12px;
+	display: list-item;
+	text-align: center;
+	}
+}
 
-.my-tabs li:last-of-type { padding-right: 0 }
 
 .my-tabs li a {
   background-color: #f9f9f9;
