@@ -8,9 +8,11 @@ ul {
 li {
 	list-style: none;
 }
-* {
+
+/** {
 	box-sizing: content-box;
 }
+*/
 body {
 	font-family: 'Montserrat', Arial, serif;
 	background-image: url('media/violetwinter.jpg');
@@ -76,6 +78,7 @@ Body
 	font-size: 4em;
 	color: white;
 	font-family: font-family: 'Montserrat', Arial, serif;
+	text-shadow: 2px 2px #342B3A;
 }
 
 .subtitle {
@@ -107,7 +110,10 @@ Body
   padding: 0;
 }
 
-.tabdemo .tab-content-item { max-width: 100%; }
+.tabdemo .tab-content-item { 
+	max-width: 100%; 
+	box-sizing:content-box;
+}
 
 .my-tabs { margin: 0 auto }
 
@@ -119,6 +125,7 @@ Body
   columns: 1;*/
   font-size: 24px;
   line-height: 32px;
+  box-sizing:content-box;
 }
 
 /*.content {
@@ -127,6 +134,7 @@ Body
   line-height: 32px;
 }
 */
+
 .my-tabs .tab-menu {
   margin-bottom: 20px;
   display: table;

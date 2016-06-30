@@ -12,12 +12,15 @@
   position: relative;
 }
 .timeline-me-container.no-scroll .timeline-me-wrapper {
+  width:100%;
   overflow: hidden;
 }
 .timeline-me-container.no-x-scroll .timeline-me-wrapper {
+	width:100%;
   overflow-x: hidden;
 }
 .timeline-me-container.no-y-scroll .timeline-me-wrapper {
+width:100%;
   overflow-y: hidden;
 }
 
@@ -104,7 +107,7 @@
 .timeline-me-leftarrow:after {
   left: 0;
   border-width: 11.54px 20px 11.54px 0;
-  border-color: transparent #ffffff transparent transparent;
+  border-color: transparent #BA9EDE transparent transparent;
 }
 
 .timeline-me-rightarrow {
@@ -113,7 +116,7 @@
 .timeline-me-rightarrow:after {
   right: 0;
   border-width: 11.54px 0 11.54px 20px;
-  border-color: transparent transparent transparent #ffffff;
+  border-color: transparent transparent transparent #BA9EDE;
 }
 
 /* -------------------- *\
@@ -123,6 +126,7 @@
   /*.timeline-me-label { bottom: - ($label-picto-total-size - $timeline-thickness) / 2; }*/
 }
 .timeline-me-horizontal .timeline-me-wrapper {
+	width:100%;
   overflow-x: scroll;
 }
 .timeline-me-horizontal .timeline-me-item {
@@ -185,6 +189,7 @@
 .timeline-me-hidden {
   position: relative;
   z-index: -1000;
+  opacity: 0;
 }
 
 /* ----------------- *\
