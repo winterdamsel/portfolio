@@ -103,6 +103,7 @@ width:100%;
 
 .timeline-me-leftarrow {
   left: 0;
+  
 }
 .timeline-me-leftarrow:after {
   left: 0;
@@ -117,6 +118,7 @@ width:100%;
   right: 0;
   border-width: 11.54px 0 11.54px 20px;
   border-color: transparent transparent transparent #BA9EDE;
+  
 }
 
 /* -------------------- *\
@@ -172,10 +174,11 @@ width:100%;
 .timeline-me-fullcontent {
   position: relative;
   box-sizing: border-box;
-  width: 100%;
+  width: 50%;
   background-color: #ffffff;
   line-height: 20px;
   border-radius: 2px;
+  font-size:0.5em;
 }
 
 .timeline-me-showmore {

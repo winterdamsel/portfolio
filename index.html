@@ -78,13 +78,30 @@
 	</div>
 	
 	<div class="tab-content-item" style="width:100%;">
-     <h2 style="background-color:#BA9EDE;padding:3%;color:white;">Expertise</h2>
-<div id="timeline-hor" style="width:auto;position:relative" class="visible-md visible-lg hidden-xs hidden-sm"></div>
-		<div id="timeline-ver" style="width:auto;position:relative" class="visible-xs visible-sm hidden-md hidden-lg"></div>
-		<script src="scripts/timeline/src/jquery.timelineMe.js"></script>
+		<h2 style="background-color:#BA9EDE;padding:3%;color:white;">Expertise</h2>
+	 
+		<h4 class="panel-heading" style="background-color:#A1BFED;width:50%;color:white;">Experience</h4>
+		<div id="timeline-horexp" style="width:auto; padding: 2 2% auto;" class="visible-md visible-lg hidden-xs hidden-sm"></div>
+		<div id="timeline-verexp" style="width:auto;" class="visible-xs visible-sm hidden-md hidden-lg"></div>
 		
+		<h4 class="panel-heading" style="background-color:#EA39B5;width:50%;color:white;float:right;">Education</h4>
+		<div id="timeline-hor" style="width:auto;position:" class="visible-md visible-lg hidden-xs hidden-sm"></div>
+		<div id="timeline-ver" style="width:auto;" class="visible-xs visible-sm hidden-md hidden-lg"></div>
+		
+		<script src="scripts/timeline/src/jquery.timelineMe.js"></script>
+
+		<!--<div class="carrousel" id="carr" style="width:75%;height:35%;">
+			<ul>
+				<li><img src="media/ny_ted.jpg" alt="NYTED" style="width:100%;height:35%;border: 5px solid #BA9EDE;" class="box-img"><br><div style="background-color:white;" class="description">Some text here</div></li>
+				<li><img src="media/sf_open.jpg" alt="SFFacebook" style="width:100%;height:35%;border: 5px solid #BA9EDE;" class="box-img"><br><div style="background-color:white;" class="description">Some text here</div></li>
+				<li><img src="media/tmp_angry.jpg" alt="AngryBirds" style="width:100%;height:35%;border: 5px solid #BA9EDE;" class="box-img"><div style="background-color:white;" class="description">Some text here</div></li>
+				<li><img src="media/sd_jolla.jpg" alt="LaJollaCoves" style="width:100%;height:35%;border: 5px solid #BA9EDE;" class="box-img"><div style="background-color:white;" class="description">Some text here</div></li>
+				<li><img src="media/mty_cerro.jpg" alt="MTY Cerro de la Silla" style="width:100%;height:35%;border: 5px solid #BA9EDE;" class="box-img"><div style="background-color:white;" class="description">Some text here</div></li>
+				<li><img src="media/mx_bart.jpg" alt="MX Palacio de Bellas Artes" style="width:100%;height:35%;border: 5px solid #BA9EDE;" class="box-img"><div style="background-color:white;" class="description">Some text here</div></li>
+			</ul>
+		</div>-->		
 	<!--<div class="container">	-->
-		<div id="container" style="background-color:#FEFEFE;padding-top:2%;">
+	<!--	<div id="container" style="background-color:#FEFEFE;padding-top:2%;">
 		
 			<div class="col-lg-4 col-md-4 row-eq-height" style="position:relative;">
 				<div class="panel-group" id="accordion">
@@ -190,7 +207,7 @@
 			</div>
 			
 						
-		</div>
+		</div>-->
 	<!--</div>-->
 	</div>
 	<div class="tab-content-item" style="width:100%;">
@@ -506,28 +523,44 @@ $('.carrousel').unslider('animate:' + pichoo);
 $(".live-tile, .flip-list").not(".exclude").liveTile();
 
 $(document).ready(function() {
+
+var ed1 = {location: "Tampere", description: "MSc. in IT<br>Focus in User Experience<br>Tampere University of Technology"};
+var ed2 = {location: "New York", description: "NYC Disrupt Design Fellowship<br>Un-school of Disruptive Design"};
+var ed3 = {location: "San Francisco", description: "Open Source Project: Design Open<br>Open Academy, sponsored by Facebook"};
+var ed4 = {location: "Monterrey", description: "BSc. in Electronics &amp; Communications Engineering<br>ITESM Campus Monterrey<br>Honors Degree &amp; Student Leadership Diploma"};
+
+var exp1 = {location: "Tampere", position: "Software Development Engineer in Test – Summer trainee"};
+var exp2 = {location: "San Diego", position: "Software Test Engineer (Qualcomm - MDM)"};
+var exp3 = {location: "Monterrey", position: "Sr. Test Engineer (Texas Instruments - OMAP)"};
+var exp4 = {location: "Mexico City", position: "Mobile Applications Developer"};
+var exp5 = {location: "Monterrey", position: "Software Engineer (Texas Instruments - OMAP)"};
+
         $('#timeline-ver').timelineMe({
             items: [
                 // Put your timeline items here
                 {
                     type: 'bigItem',
-                    label: 'Tampere',
-                    shortContent: '<p style="font-size:0.75em;">MSc. in IT<br>Focus in User Experience<br>Tampere University of Technology<br>2014-2016</p>',
+                    label: ed1.location,
+					picto: '<i class="glyphicon glyphicon-asterisk" style="color:#BA9EDE"></i>',
+                    shortContent: ed1.description
                 },
 				                {
                     type: 'smallItem',
-                    label: 'New York',
-                    shortContent: '<p style="font-size:0.75em;">NYC Disrupt Design Fellowship<br>Un-school of Disruptive Design</p>'
+                    label: ed2.location,
+					picto: '<i class="glyphicon glyphicon-apple" style="color:#BA9EDE;"></i>',
+                    shortContent: ed2.description
                 },
                 {
                     type: 'smallItem',
-                    label: 'San Francisco',
-                    shortContent: '<p style="font-size:0.75em;">Open Source Project: Design Open<br>Open Academy, sponsored by Facebook</p>'
+                    label: ed3.location,
+					picto: '<i class="glyphicon glyphicon-thumbs-up" style="color:#BA9EDE"></i>',
+                    shortContent: ed3.description
                 },
 				{
                     type: 'bigItem',
-                    label: 'Monterrey',
-                    shortContent: '<p style="font-size:0.75em;">BSc. in Electronics &amp; Communications Engineering<br>ITESM Campus Monterrey<br>Honors Degree &amp; Student Leadership Diploma<br>2004-2008</p>'
+                    label: ed4.location,
+					picto: '<i class="glyphicon glyphicon-triangle-top" style="color:#BA9EDE;"></i>',
+                    shortContent: ed4.description
                 },
             ],
 			orientation: 'vertical',
@@ -539,29 +572,110 @@ $(document).ready(function() {
                 // Put your timeline items here
                 {
                     type: 'bigItem',
-                    label: 'Tampere',
-                    shortContent: '<p style="font-size:0.75em;">MSc. in IT<br>Focus in User Experience<br>Tampere University of Technology<br>2014-2016</p>',
+                    label: ed1.location,
+					picto: '<i class="glyphicon glyphicon-asterisk" style="color:#BA9EDE"></i>',
+                    shortContent: ed1.description
                 },
 				                {
                     type: 'smallItem',
-                    label: 'New York',
-                    shortContent: '<p style="font-size:0.75em;">NYC Disrupt Design Fellowship<br>Un-school of Disruptive Design</p>'
+                    label: ed2.location,
+					picto: '<i class="glyphicon glyphicon-apple" style="color:#BA9EDE;"></i>',
+                    shortContent: ed2.description
                 },
                 {
                     type: 'smallItem',
-                    label: 'San Francisco',
-                    shortContent: '<p style="font-size:0.75em;">Open Source Project: Design Open<br>Open Academy, sponsored by Facebook</p>'
+                    label: ed3.location,
+					picto: '<i class="glyphicon glyphicon-thumbs-up" style="color:#BA9EDE"></i>',
+                    shortContent: ed3.description
                 },
 				{
                     type: 'bigItem',
-                    label: 'Monterrey',
-                    shortContent: '<p style="font-size:0.75em;">BSc. in Electronics &amp; Communications Engineering<br>ITESM Campus Monterrey<br>Honors Degree &amp; Student Leadership Diploma<br>2004-2008</p>'
+                    label: ed4.location,
+					picto: '<i class="glyphicon glyphicon-triangle-top" style="color:#BA9EDE;"></i>',
+                    shortContent: ed4.description
                 },
             ],
 			orientation: 'horizontal',
 			scrollArrows: true,
 			scrollBar: false,
         });
+		$('#timeline-verexp').timelineMe({
+            items: [
+                // Put your timeline items here
+                {
+                    type: 'bigItem',
+                    label: exp1.location,
+					picto: '<i class="glyphicon glyphicon-asterisk" style="color:#A1BFED;"></i>',
+                    shortContent: exp1.position
+                },
+				{
+                    type: 'smallItem',
+                    label: exp2.location,
+					picto: '<i class="glyphicon glyphicon-signal" style="color:#A1BFED;"></i>',
+                    shortContent: exp2.position
+                },
+                {
+                    type: 'smallItem',
+                    label: exp3.location,
+					picto: '<i class="glyphicon glyphicon-triangle-top" style="color:#A1BFED;"></i>',
+                    shortContent: exp3.position
+                },
+				{
+                    type: 'smallItem',
+                    label: exp4.location,
+					picto: '<i class="glyphicon glyphicon-phone" style="color:#A1BFED;"></i>',
+                    shortContent: exp4.position
+                },
+				{
+                    type: 'bigItem',
+                    label: exp5.location,
+					picto: '<i class="glyphicon glyphicon-triangle-top" style="color:#A1BFED;"></i>',
+                    shortContent: exp5.position
+                },
+            ],
+			orientation: 'vertical',
+			scrollArrows: true,
+			scrollBar: false,
+        });
+		$('#timeline-horexp').timelineMe({
+            items: [
+                // Put your timeline items here
+                {
+                    type: 'bigItem',
+                    label: exp1.location,
+					picto: '<i class="glyphicon glyphicon-asterisk" style="color:#A1BFED;"></i>',
+                    shortContent: exp1.position
+                },
+				{
+                    type: 'smallItem',
+                    label: exp2.location,
+					picto: '<i class="glyphicon glyphicon-signal" style="color:#A1BFED;"></i>',
+                    shortContent: exp2.position
+                },
+                {
+                    type: 'smallItem',
+                    label: exp3.location,
+					picto: '<i class="glyphicon glyphicon-triangle-top" style="color:#A1BFED;"></i>',
+                    shortContent: exp3.position
+                },
+				{
+                    type: 'smallItem',
+                    label: exp4.location,
+					picto: '<i class="glyphicon glyphicon-phone" style="color:#A1BFED;"></i>',
+                    shortContent: exp4.position
+                },
+				{
+                    type: 'bigItem',
+                    label: exp5.location,
+					picto: '<i class="glyphicon glyphicon-triangle-top" style="color:#A1BFED;"></i>',
+                    shortContent: exp5.position
+                },
+            ],
+			orientation: 'horizontal',
+			scrollArrows: true,
+			scrollBar: false,
+        });
+		
     });
 
 </script>

@@ -499,6 +499,8 @@
             }
             if(item.picto || item.pictoTemplate) {
                 item.picto ? item.pictoElement.html(item.picto) : item.pictoElement.html(loadHTMLFromFile(item.pictoTemplate));
+				console.log("HEREEE"+item.picto);
+				item.labelElement.append(item.pictoElement);
             }
 
             if((item.shortContent || item.shortContentTemplate) && item.shortContentElement) {
