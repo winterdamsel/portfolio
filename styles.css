@@ -135,6 +135,7 @@ Body
 }
 */
 
+
 .my-tabs .tab-menu {
   margin-bottom: 20px;
   display: table;
@@ -154,6 +155,10 @@ Body
 	.my-tabs li:last-of-type 
 	{ padding-right: 0 }
 
+	.me {
+	border-radius:75%; height: 75%; width: 75%;
+}
+
 }
 
 @media (max-width: 767px){
@@ -163,6 +168,11 @@ Body
 	display: list-item;
 	text-align: center;
 	}
+	
+	.me {
+	border-radius:75%; height: 40%; width: 40%;
+}
+
 }
 
 
