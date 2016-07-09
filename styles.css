@@ -156,8 +156,17 @@ Body
 	{ padding-right: 0 }
 
 	.me {
-	border-radius:75%; height: 75%; width: 75%;
-}
+	border-radius:75%; 
+	height: 75%; width: 75%;
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+	}
+	
+	.pols {
+		width: 306px;
+		height: auto;
+	}
 
 }
 
@@ -170,8 +179,17 @@ Body
 	}
 	
 	.me {
-	border-radius:75%; height: 40%; width: 40%;
-}
+	border-radius:75%; 
+	height: 40%; width: 40%;
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+	}
+
+	.pols {
+		width: 306px;
+		height: auto;
+	}
 
 }
 
@@ -195,3 +213,80 @@ Body
 
 .my-tabs li a { text-decoration: none }
 
+/**************************/
+/*       Bubble           */
+/**************************/
+
+.bubble 
+{
+position: relative;
+width: 385px;
+height: 120px;
+padding: 0px;
+background: #FFFFFF;
+-webkit-border-radius: 0px;
+-moz-border-radius: 0px;
+border-radius: 0px;
+border: #A1EDD2 solid 8px;
+}
+
+.bubble:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 24px 40px 24px 0;
+border-color: transparent #FFFFFF;
+display: block;
+width: 0;
+z-index: 1;
+left: -40px;
+top: 40px;
+}
+
+.bubble:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 31px 47px 31px 0;
+border-color: transparent #A1EDD2;
+display: block;
+width: 0;
+z-index: 0;
+left: -55px;
+top: 33px;
+}
+
+/*** ************/
+/* Polaroids
+/****************/
+
+.polaroid {
+  position: relative;
+  width: 240px;
+  margin: 0 4%;
+}
+ 
+.polaroid img {
+  border: 10px solid #FFF;
+  border-bottom: 45px solid #FEFEFE;
+  -webkit-box-shadow: 3px 3px 3px #777;
+  -moz-box-shadow: 3px 3px 3px #777;
+  box-shadow: 3px 3px 3px #777;
+  width: 306px;
+ height: auto;
+}
+ 
+.polaroid p {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+  color: #888;
+  
+}
+
+div.note {
+margin-top: 5px; text-align: center; box-shadow: 10px 10px 5px #EA39B5; background-color:white; padding: 7px; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg);
+}
