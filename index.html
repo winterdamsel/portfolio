@@ -100,31 +100,35 @@
 		
 	<div class="tab-content-item" style="width:100%;">
 		<h2 style="background-color:#BA9EDE;padding:3%;color:white;">Expertise</h2>
-	 
-		<h4 class="panel-heading" style="background-color:#A1BFED;width:50%;color:white;margin:1%;">Experience</h4>
-		<div id="timeline-horexp" style="width:98%; padding: 12px 0 12px; margin:1%;border-style: solid; background-color:#FFFFFF;border-color:#A1BFED;" class="visible-md visible-lg hidden-xs hidden-sm"></div>
-		<div id="timeline-verexp" style="width:98%; padding: 12px 0 12px; margin:1%;border-style: solid; background-color:#FFFFFF;border-color:#A1BFED;" class="visible-xs visible-sm hidden-md hidden-lg"></div>
 		
-	<div class="container">
+	 <div class="container">
+		<h2 class="panel-heading">Where have I been and why?</h2>
 		<div class="row">
-		<div class="carrousel col-md-6 col-lg-6 col-sm-12 col-xs-12" id="carr" style="width:100%;height:35%;">
+		<div class="col-md-4 col-lg-4 col-sm-12 col-xs-12" style="width:50%;height:45%; vertical-align: middle; padding-top: 10%; padding-bottom:5%; background-color:#33CCCC; margin-top: 5%;">
+		<div class="carrousel" id="carr">
 			<ul>
-				<li><img src="media/ny_ted.jpg" alt="NYTED" class="img-thumbnail" width="304" height="236"/><br><span style="background-color:white; position:relative;" class="description">Day trip to TED HQ as part of the NY Fellowship from the Un-School of Disruptive Design</span></li>
-				<li><img src="media/sf_open.jpg" alt="SFFacebook" class="img-thumbnail" width="304" height="236"/><br><span style="background-color:white;position:relative;" class="description">Open Academy's Kickoff event at Menlo Park</span></li>
-				<li><img src="media/tmp_angry.jpg" alt="AngryBirds" class="img-thumbnail" width="304" height="236"/><br><span style="background-color:white;position:relative;" class="description">Angry birds Land at Särkänniemi amusement park in Tampere</span></li>
-				<li><img src="media/sd_jolla.jpg" alt="LaJollaCoves" class="img-thumbnail" width="304" height="236"/><br><span style="background-color:white;position:relative;" class="description">La Jolla Coves in San Diego</span></li>
-				<li><img src="media/mty_cerro.jpg" alt="MTY Cerro de la Silla" width="304" height="236" class="img-thumbnail"/><span style="background-color:white;position:relative;" class="description">Monterrey's iconic mountain</span></li>
-				<li><img src="media/mx_bart.jpg" alt="MX Palacio de Bellas Artes" class="img-thumbnail" width="304" height="236"/><span style="background-color:white;position:relative;" class="description">Palace of Fine Arts in Mexico city</span></li>
+				<li><img src="media/ny_ted.jpg" alt="NYTED" class="img-thumbnail" width="304" height="236"/><br><div style="background-color:white; position:relative;" class="description">Day trip to TED HQ as part of the NY Fellowship from the Un-School of Disruptive Design</div></li>
+				<li><img src="media/sf_open.jpg" alt="SFFacebook" class="img-thumbnail" width="304" height="236"/><br><div style="background-color:white;position:relative;" class="description">Open Academy's Kickoff event at Menlo Park</div></li>
+				<li><img src="media/tmp_angry.jpg" alt="AngryBirds" class="img-thumbnail" width="304" height="236"/><br><div style="background-color:white;position:relative;" class="description">Angry birds Land at Särkänniemi amusement park in Tampere</div></li>
+				<li><img src="media/sd_jolla.jpg" alt="LaJollaCoves" class="img-thumbnail" width="304" height="236"/><br><div style="background-color:white;position:relative;" class="description">La Jolla Coves in San Diego</div></li>
+				<li><img src="media/mty_cerro.jpg" alt="MTY Cerro de la Silla" width="304" height="236" class="img-thumbnail"/><div style="background-color:white;position:relative;" class="description">Monterrey's iconic mountain</div></li>
+				<li><img src="media/mx_bart.jpg" alt="MX Palacio de Bellas Artes" class="img-thumbnail" width="304" height="236"/><div style="background-color:white;position:relative;" class="description">Palace of Fine Arts in Mexico city</div></li>
 			</ul>
 		</div>
+		</div>
+		<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12" style="width:50%;height:35%;position:relative;">
+			<h4 class="panel-heading" style="background-color:#A1BFED;width:50%;color:white;margin:1%;">Experience</h4>
+			<div id="timeline-horexp" style="width:98%; padding: 12px 0 12px; margin:1%;border-style: solid; background-color:#FFFFFF;border-color:#A1BFED;" class="visible-md visible-lg hidden-xs hidden-sm"></div>
+			<div id="timeline-verexp" style="width:98%; padding: 12px 0 12px; margin:1%;border-style: solid; background-color:#FFFFFF;border-color:#A1BFED;" class="visible-xs visible-sm hidden-md hidden-lg"></div>
+
+			<h4 class="panel-heading" style="background-color:#EA39B5;width:50%;color:white;float:right;">Education</h4>
+			<div id="timeline-hor" style="width:auto; border-style: solid; border-color:#EA39B5; margin:1%; padding: 12px 0 12px;" class="visible-md visible-lg hidden-xs hidden-sm"></div>
+			<div id="timeline-ver" style="width:auto; border-style: solid; border-color:#EA39B5; margin:1%; padding: 12px 0 12px;" class="visible-xs visible-sm hidden-md hidden-lg"></div>
 		
+			<script src="scripts/timeline/src/jquery.timelineMe.js"></script>	
 		</div>
 		</div>
-		<h4 class="panel-heading" style="background-color:#EA39B5;width:50%;color:white;float:right;">Education</h4>
-		<div id="timeline-hor" style="width:auto;position:" class="visible-md visible-lg hidden-xs hidden-sm"></div>
-		<div id="timeline-ver" style="width:auto;" class="visible-xs visible-sm hidden-md hidden-lg"></div>
-		
-		<script src="scripts/timeline/src/jquery.timelineMe.js"></script>		
+		</div>
 	<!--<div class="container">	-->
 	<!--	<div id="container" style="background-color:#FEFEFE;padding-top:2%;">
 		
@@ -237,7 +241,8 @@
 	</div>
 	<div class="tab-content-item" style="width:100%;">
 	<h2 style="background-color:#EA39B5;padding:3%;color:white;">Projects</h2>
-	
+	<br>
+	<h2 class="panel-heading">What have I been working on?</h2>
 		<div style="margin-top:5%; padding:3%;">	
 		 <ul class="thumbs" id="MyPortfolio">
             <li><a href="#thumb1" class="thumbnail" style="background-image: url('media/presentations/mainpic.jpg');height:100%;">
@@ -359,6 +364,8 @@
 	<div class="tab-content-item" style="width:100%;">
 	
 	<h2 style="background-color:#A1BFED;padding:3%;color:white;">Papers &amp; Visualizations </h2>
+	<br>
+	<h2 class="panel-heading">What have I been searching and finding?</h2>
 	<div class="container text-center" style="margin-top:5%; width:100%; margin-bottom:5%;">
 	<div class="tiles green tile-group three-wide" style="margin-right: auto; margin-left:auto; padding: 0 5% auto;">
 		<div class="live-tile accent violet exclude">
