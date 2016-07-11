@@ -220,8 +220,8 @@ Body
 .bubble 
 {
 position: relative;
-width: 385px;
-height: 120px;
+width: 100%;
+height: auto;
 padding: 0px;
 background: #FFFFFF;
 -webkit-border-radius: 0px;
