@@ -290,3 +290,6 @@ top: 33px;
 div.note {
 margin-top: 5px; text-align: center; box-shadow: 10px 10px 5px #EA39B5; background-color:white; padding: 7px; -ms-transform: rotate(-7deg); -webkit-transform: rotate(-7deg);
 }
+
+div.notebot {
+margin-right: 10%; text-align: center; box-shadow: 2px 2px 1px #000; background-color:white; padding: 7px; -ms-transform: rotate(7deg); -webkit-transform: rotate(7deg); float:right; font-size:11px;}
